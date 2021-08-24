@@ -13,9 +13,17 @@ public class GridManager : Singleton<GridManager>
         get { return gridsize; }
     }
     Vector3 startpoint;
+
     public Vector3 Startpoint
     {
         get { return startpoint; }
+    }
+    private Vector3 GetTileAt(int x,int y)
+    {
+        if (grid[x, y] != null)
+        {
+
+        }
     }
     int width, height;
     Transform[,] grid;
